@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="utf-8">
-	<title>CRUD</title>
 
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-
-</head>
-
-<body>
-
-<nav>
-	<ul>
-		
-		<li><a href="index.html">Sign In</a></li>
-		<li><a href="register.html">New Account</a></li>
-		<li><a href="employees.html">Employees</a></li>
-		<li><a href="exit.html">Exit</a></li>
-
-	</ul>
-</nav>
-
-<section>
 
 	<br>
 	<h1>NEW EMPLOYEE</h1>
@@ -41,9 +18,3 @@
 		<input type="submit" value="Register">
 
 	</form>
-
-</section>
-	
-</body>
-
-</html>
