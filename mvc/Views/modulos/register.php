@@ -1,4 +1,16 @@
+<?php
 
+session_start();
+
+if(!$_SESSION["Ingreso"])
+
+	header("location:index.php?ruta=enter");
+
+	exit();
+
+
+
+?>
 
 	<br>
 	<h1>NEW EMPLOYEE</h1>

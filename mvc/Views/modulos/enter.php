@@ -5,11 +5,16 @@
 
 	<form method="post" action="">
 		
-		<input type="text" placeholder="User" name="user" required>
+		<input type="text" placeholder="User" name="userI" required>
 
-		<input type="password" placeholder="Password" name="password" required>
+		<input type="password" placeholder="Password" name="passwordI" required>
 
 		<input type="submit" value="Sign In">
 
 	</form>
 
+<?php
+
+$ingreso = new AdminC();
+$ingreso -> IngresoC();
+?>
