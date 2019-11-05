@@ -5,7 +5,7 @@ class Modelo{
 
 		
 		
-		if($rutas == "enter" || $rutas == "register" || $rutas == "employees" || $rutas == "exit"){
+		if($rutas == "enter" || $rutas == "register" || $rutas == "employees" || $rutas == "exit"  || $rutas == "edit"){
 
 			$pagina = 'Views/modulos/'.$rutas.'.php';
 		

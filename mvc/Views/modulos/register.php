@@ -2,12 +2,12 @@
 
 session_start();
 
-if(!$_SESSION["Ingreso"])
+if(!$_SESSION["Ingreso"]){
 
 	header("location:index.php?ruta=enter");
 
 	exit();
-
+}
 
 
 ?>
@@ -15,18 +15,24 @@ if(!$_SESSION["Ingreso"])
 	<br>
 	<h1>NEW EMPLOYEE</h1>
 
-	<form method="post" action="">
+	<form method="post">
 		
-		<input type="text" placeholder="Name" name="name" required>
+		<input type="text" placeholder="Name" name="nameR" required>
 
-		<input type="text" placeholder="Last Name" name="lastname" required>
+		<input type="text" placeholder="Last Name" name="lastnameR" required>
 
-		<input type="email" placeholder="Email" name="email" required>
+		<input type="email" placeholder="Email" name="emailR" required>
 
-		<input type="text" placeholder="Position" name="position" required>
+		<input type="text" placeholder="Position" name="positionR" required>
 
-		<input type="text" placeholder="Salary" name="salary" required>
+		<input type="text" placeholder="Salary" name="salaryR" required>
 
 		<input type="submit" value="Register">
 
 	</form>
+
+	<?php
+
+		$registrar = new employeeC();
+		$registrar -> AddEmployeeC();
+	?>

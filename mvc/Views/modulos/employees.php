@@ -2,11 +2,11 @@
 
 session_start();
 
-if(!$_SESSION["Ingreso"])
-
+if(!$_SESSION["Ingreso"]){
 	header("location:index.php?ruta=enter");
 
 	exit();
+}
 
 
 
@@ -36,17 +36,24 @@ if(!$_SESSION["Ingreso"])
 
 		<tbody>
 			
-			<tr>
-				<td>Douglas</td>
-				<td>Loaiza</td>
-				<td>douglaslz@hotmail.com</td>
-				<td>Programador PHP</td>
-				<td>$ 8.000</td>
-				<td><button>Edit</button></td>
-				<td><button>Delete</button></td>
-			</tr>
+			
+
+
+			<?php
+
+				$mostrar = new employeeC();
+				$mostrar -> ShowEmployee();
+
+			?>
 
 		</tbody>
 
 	</table>
+
+			<?php
+
+				$eliminar = new employeeC();
+				$eliminar -> DeleteEmployee();
+
+			?>
 
